@@ -76,7 +76,7 @@ const Task = () => {
       <div className="space-y-4 sm:space-y-0 sm:border sm:rounded-lg sm:overflow-x-auto sm:shadow-md">
         {/* Table Header (only visible on sm+) */}
         <div className="hidden sm:grid grid-cols-7 bg-blue-50 text-blue-700 font-semibold uppercase tracking-wider text-xs sm:text-sm px-4 py-3">
-          <span>#</span>
+          <span>Sl</span>
           <span>Title</span>
           <span className="hidden sm:block">Description</span>
           <span>Status</span>
