@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { toast } from 'sonner';
 import { useDeleteTaskMutation, useGetAllTaskQuery, useUpdateTaskMutation } from '../redux/api/taskApi';
 import TaskFormModal from '../Components/TaskFormModal';
+import Loader from '../Components/Loader';
 
 const Task = () => {
   const { data: tasks, isLoading, isError, refetch } = useGetAllTaskQuery();
@@ -48,11 +49,11 @@ const Task = () => {
     refetch();
   }, [tasks?.length]);
 
-  if (isLoading) return <p className="text-center mt-10">Loading tasks...</p>;
+  if (isLoading) return <Loader></Loader>;
   if (isError) return <p className="text-center text-red-600 mt-10">Failed to load tasks</p>;
 
   return (
-    <div className="max-w-6xl mx-auto ">
+    <div className="max-w-6xl mx-auto bg-[#f0e8ff] p-2 rounded-lg font-fustat">
     <div className="flex flex-col sm:flex-row justify-between items-start sm:items-center mb-6 gap-4 sm:gap-0">
       <h2 className="text-2xl sm:text-3xl font-bold text-gray-900">Task Manager</h2>
       <button
