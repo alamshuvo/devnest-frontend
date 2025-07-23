@@ -1,35 +1,29 @@
-📝 Task Management App
+# 📋 Task Management App
 
-A simple full-stack task management web application built with:
+A full-stack task management application built using React, Redux Toolkit Query, Node.js, Express.js, and MongoDB. You can create, update, and delete tasks, with smooth toast notifications and a simple email-based dummy login.
 
-Frontend: React + Redux Toolkit Query (RTK Query)
-Backend: Node.js + Express
-Database: MongoDB
-API Communication: RESTful APIs
-Notifications: sonner for toast feedback
-🚀 Features
+---
 
-✅ Dummy login via email (JWT token stored in localStorage)
-✅ Add, Edit, and Delete Tasks
-✅ Task fields: Title, Description, Status, Priority, and Due Date
-✅ Task listing with error fallback
-✅ Modal-based forms for better UX
-✅ Toast notifications for success/error handling
-✅ Fully responsive design with clean UI
-🛠️ Technologies Used
+## 🚀 Features
 
-# Frontend
-React
-Redux Toolkit & RTK Query
-Tailwind CSS
-React Router
-sonner for toast notifications
-# Backend
-Node.js
-Express.js
-MongoDB 
-CORS
+- 🔐 Dummy login (email only, generates token)
+- 📝 Create, Edit, and Delete tasks
+- 🔍 View all tasks in a list
+- ⚡ Real-time UI updates using RTK Query
+- 📦 Backend powered by Express & MongoDB
+- 🌐 Cross-Origin support for frontend-backend integration
+- 🎨 Clean, responsive UI with Tailwind CSS
+## Frontend 
+- React Redux Toolkit 
+- Tailwind CSS 
+- React Router Dom 
+- Sonner For Toast 
 
+## Backend 
+- Node.js 
+- Express.js
+- MongoDB 
+- CORS
 
 # Run it Your Local Machine 
 ### 1. Clone the Repository
