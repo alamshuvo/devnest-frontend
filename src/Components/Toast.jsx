@@ -1,0 +1,10 @@
+import { Toaster } from "sonner";
+
+export function Toast() {
+  return (
+    <>
+      <Toaster richColors position="top-center" />
+      {/* Your router or app layout */}
+    </>
+  );
+}
